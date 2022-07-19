@@ -11,6 +11,8 @@ import TestSelect from '../views/TestSelect'
 import TestSwitch from '../views/TestSwitch'
 import TestUpload from '../views/TestUpload'
 import TestForm from '../views/TestForm'
+// 自定义测试平台
+import TestBed202207191622Form from '../views/testbed/TestBed202207191622Form'
 
 Vue.use(VueRouter)
 
@@ -92,8 +94,13 @@ const routes = [
     path: '/test-form',
     name: 'TestForm',
     component: TestForm
-  }
+  },
   // 自定义的实验平台 TODO
+  {
+    path: '/202207191622',
+    name: 'TestBed202207191622Form',
+    component: TestBed202207191622Form
+  }
 ]
 
 const router = new VueRouter({
